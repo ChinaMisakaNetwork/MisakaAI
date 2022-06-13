@@ -10,7 +10,7 @@
 TODO
 
 ### 模型推理
-TODO
+暂定 [ncnn](https://github.com/Tencent/ncnn) 框架
 
 ### 应用前端
 
