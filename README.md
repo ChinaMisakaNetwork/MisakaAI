@@ -14,5 +14,5 @@ TODO
 
 ### 应用前端
 
-- 服务端: QQ群机器人
+- 服务端: QQ群机器人 (暂定[go-cqhttp](https://github.com/Mrs4s/go-cqhttp))
 - 移动/PC端: 动态桌面 / 游戏角色AI
