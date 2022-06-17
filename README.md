@@ -10,8 +10,9 @@
 - [ ] 互动聊天模型
 
 #### 语料获取
-- [ ] 开源聊天语料库: [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 
+- [x] 开源聊天语料库: [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 
 - [ ] 魔禁聊天语料库: 对魔禁小说做加工, 制作成语料库
+- [x] 情感语料库: [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
 
 #### 数据处理
 TODO
