@@ -7,12 +7,19 @@
 递进的分为三个部分, 模型训练, 模型推理, 应用前端
 
 ### 模型训练
+#### 语料获取
+1. 一阶段使用开语料库 [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 来使流程完整
+2. 二阶段处理魔禁小说, 将其制作为魔禁语料库
+
+#### 数据处理
+TODO
+
+#### 模型建立
 TODO
 
 ### 模型推理
 暂定 [ncnn](https://github.com/Tencent/ncnn) 框架
 
 ### 应用前端
-
-- 服务端: QQ群机器人 (暂定[go-cqhttp](https://github.com/Mrs4s/go-cqhttp))
+- 服务端: QQ群机器人 (暂定 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp))
 - 移动/PC端: 动态桌面 / 游戏角色AI
