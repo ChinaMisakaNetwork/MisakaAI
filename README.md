@@ -1,5 +1,5 @@
 # MisakaAI
-御坂网络AI模块 - 让御坂美琴 (以及更多角色) 从动漫里走出来
+御坂网络AI模块 - 让御坂 (以及更多角色) 从动漫里走出来
 
 (以当前时代的技术而看, 只有NLP部分, 就连CV都很悬, 等机器人CV更成熟吧)
 
@@ -7,9 +7,12 @@
 递进的分为三个部分, 模型训练, 模型推理, 应用前端
 
 ### 模型训练
+- 聊天对话模型
+- 情感分析模型
+
 #### 语料获取
-1. 一阶段使用开语料库 [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 来使流程完整
-2. 二阶段处理魔禁小说, 将其制作为魔禁语料库
+1. 开源语料库 [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 
+2. 处理魔禁小说, 将其制作为魔禁语料库
 
 #### 数据处理
 TODO
