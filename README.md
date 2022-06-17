@@ -7,8 +7,9 @@
 递进的分为三个部分, 模型训练, 模型推理, 应用前端
 
 ### 模型训练
-- 聊天对话模型
+- 机器翻译模型
 - 情感分析模型
+- 互动聊天模型
 
 #### 语料获取
 1. 开源语料库 [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus) 
