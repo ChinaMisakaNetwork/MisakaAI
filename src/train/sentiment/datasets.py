@@ -74,9 +74,9 @@ def new_data_loader(dict_path, data_path, stop_words_path):
 
 
 if __name__ == '__main__':
-    data_path = 'data/weibo_senti_100k.csv'
-    stop_words_path = 'data/hit_stopword'
-    dict_path = 'data/dict'
-    train_data_loader = new_data_loader(dict_path, data_path, stop_words_path)
+    input_data_path = 'data/weibo_senti_100k.csv'
+    input_stop_words_path = 'data/hit_stopword'
+    input_dict_path = 'data/dict'
+    train_data_loader = new_data_loader(input_dict_path, input_data_path, input_stop_words_path)
     for i, batch in enumerate(train_data_loader):
         print(batch)
