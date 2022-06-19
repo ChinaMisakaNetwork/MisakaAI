@@ -1,1 +1,4 @@
 jieba==0.42.1
+numpy==1.22.4
+# pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+# 镜像: pip3 install torch torchvision torchaudio -i https://pypi.mirrors.ustc.edu.cn/simple/

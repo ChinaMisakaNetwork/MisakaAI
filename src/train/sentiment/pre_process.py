@@ -1,17 +1,24 @@
+import os.path
+
 import jieba
 
-MIN_SEQ = 1
-TOP_N = 1000
-UNK = "<UNK>"
-PAD = "<PAD>"
-data_fpath = 'data/weibo_senti_100k.csv'
-stop_words_fpath = 'data/hit_stopword'
+from constants import UNK, PAD, MIN_SEQ, TOP_N, utf8
+
+data_path = 'data/weibo_senti_100k.csv'  # read
+stop_words_path = 'data/hit_stopword'  # read
+dict_path = 'data/dict'  # write
 
 if __name__ == '__main__':
+    if os.path.exists(dict_path):
+        print('The dictionary already exists.\nDo you want to rebuild it?(y/n)')
+        i = input()
+        if not i[0] in 'yY':
+            exit(0)
+
     # 情感标签和评论
-    data = open(data_fpath, encoding='UTF-8').readlines()[1:]
+    data = open(data_path, encoding=utf8).readlines()[1:]
     # 停止词(出现频率非常高,但是对文章或页面的意义没有实质影响)
-    stop_words = [word.strip() for word in open(stop_words_fpath, encoding='UTF-8').readlines()] + [' ', '\n']
+    stop_words = [word.strip() for word in open(stop_words_path, encoding=utf8).readlines()] + [' ', '\n']
 
     words_dict = {}  # 词频: {'词组': 频率}
 
@@ -39,6 +46,6 @@ if __name__ == '__main__':
     top_words_dict.update({UNK: len(top_words_dict), PAD: len(top_words_dict) + 1})
     # print(top_words_dict)
 
-    with open("data/dict", "w", encoding='UTF-8') as f:
+    with open(dict_path, "w", encoding=utf8) as f:
         for item in top_words_dict.keys():
             f.writelines("{},{}\n".format(item, top_words_dict[item]))
