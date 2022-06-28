@@ -16,7 +16,7 @@
 
 - [x] 开源聊天语料库: [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus)
 - [x] 情感语料库: [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
-- [ ] 中文维基百科语料：[wikimedia](https://www.logcg.com/archives/2240.html)
+- [x] 中文维基百科语料：[wikimedia](https://www.logcg.com/archives/2240.html)
 - [ ] 魔禁聊天语料库: 对魔禁小说做加工, 制作成语料库(working)
 
 #### 数据处理
