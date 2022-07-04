@@ -41,7 +41,7 @@ TODO
 ### 应用前端
 
 - [ ] 服务端: QQ群机器人 ([御坂网络Mirai_bot](https://github.com/ChinaMisakaNetwork/Mirai_Bot))
-- [ ] 移动/PC端: 动态桌面 / 游戏角色AI
+- [ ] 移动/PC端: 动态桌面 / 游戏角色AI / Live2D
 
 ### 相关教程信息
 
