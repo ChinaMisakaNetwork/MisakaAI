@@ -40,11 +40,11 @@ def load_data(data_path: str, stop_words_path: str, n: int = None):
 
 
 class TextCls(Dataset):
-    def __init__(self, dict_path, data_path, stop_words_path, max_len_seq=None):
+    def __init__(self, dict_path, data_path, stop_words_path, max_len_seq=None, limit=None):
         self.words_dict = read_dict(dict_path)  # 词频字典
         self.data_path = data_path  # 待分类数据
         self.stop_words_path = stop_words_path  # 停止词
-        self.data, self.max_len_seq = load_data(self.data_path, self.stop_words_path, 1000)  # 加载数据
+        self.data, self.max_len_seq = load_data(self.data_path, self.stop_words_path, limit)  # 加载数据
         if max_len_seq is not None:
             self.max_len_seq = max_len_seq  # 最长的句子的长度. 以此为分界线
 
@@ -71,6 +71,10 @@ class TextCls(Dataset):
 def new_data_loader(dict_path, data_path, stop_words_path):
     dataset = TextCls(dict_path, data_path, stop_words_path)
     return DataLoader(dataset, batch_size=10, shuffle=True)
+
+
+def data_loader(dataset, config):
+    return DataLoader(dataset, batch_size=config.batch_size, shuffle=config.is_shuffle)
 
 
 if __name__ == '__main__':
