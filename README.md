@@ -1,6 +1,6 @@
 # MisakaAI
 
-御坂网络AI模块 - 让御坂 (以及更多角色) 从动漫里走出来
+御坂网络AI模块1.0 - 让御坂 (以及更多角色) 从动漫里走出来
 
 ## 设计文档
 
@@ -16,7 +16,7 @@
 
 - [x] 开源聊天语料库: [chinese_chatbot_corpus](https://github.com/codemayq/chinese_chatbot_corpus)
 - [x] 情感语料库: [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
-- [x] 中文维基百科语料：[wikimedia](https://github.com/misaka-10031/wikipedia-to-zh-cn)
+- [x] 中文维基百科语料：[wikipedia](https://github.com/misaka-10031/wikipedia-to-zh-cn)
 - [ ] 魔禁聊天语料库: 对魔禁小说做加工, 制作成语料库(working)
 
 #### 数据处理
